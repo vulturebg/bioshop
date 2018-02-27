@@ -1,0 +1,1485 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+        title E-SHOP HTML Template
+        // Google font
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300", rel='stylesheet')
+        // Bootstrap
+        link(type='text/css', rel='stylesheet', href='css/bootstrap.min.css')
+        // Slick
+        link(type='text/css', rel='stylesheet', href='css/slick.css')
+        link(type='text/css', rel='stylesheet', href='css/slick-theme.css')
+        // nouislider
+        link(type='text/css', rel='stylesheet', href='css/nouislider.min.css')
+        // Font Awesome Icon
+        link(rel='stylesheet', href='css/font-awesome.min.css')
+        // Custom stlylesheet
+        link(type='text/css', rel='stylesheet', href='css/style.css')
+        // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+        // WARNING: Respond.js doesn't work if you view the page via file://
+        //if lt IE 9
+            script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+            script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    body
+        // HEADER
+        header
+            // top Header
+            #top-header
+                .container
+                    .pull-left
+                        span ДОБРЕ ДОШЛИ
+                    .pull-right
+                        ul.header-top-links
+                            li
+                                a(href='#') За нас
+                            li
+                                a(href='#') Бюлетин
+                            li
+                                a(href='#') Контакти
+                            li.dropdown.default-dropdown
+                                a.dropdown-toggle(data-toggle='dropdown', aria-expanded='true')
+                                    | Бг
+                                    i.fa.fa-caret-down
+                                ul.custom-menu
+                                    li
+                                        a(href='#') English (ENG)
+            // /top Header
+            // header
+            #header
+                .container
+                    .pull-left
+                        // Logo
+                        .header-logo
+                            a.logo(href='#')
+                                img(src='./img/logo.png', alt='')
+                        // /Logo
+                        // Search
+                        .header-search
+                            form
+                                input.input.search-input(type='text', placeholder='Търсене...')
+                                select.input.search-categories
+                                button.search-btn
+                                    i.fa.fa-search
+                        // /Search
+                    .pull-right
+                        ul.header-btns
+                            // Account
+                            li.header-account.dropdown.default-dropdown
+                                .dropdown-toggle(role='button', data-toggle='dropdown', aria-expanded='true')
+                                    .header-btns-icon
+                                        i.fa.fa-user-o
+                                    strong.text-uppercase
+                                        | Моят профил
+                                        i.fa.fa-caret-down
+                                a.text-uppercase(href='#') Влез
+                                | /
+                                a.text-uppercase(href='#') Създай
+                                ul.custom-menu
+                                    li
+                                        a(href='#')
+                                            i.fa.fa-user-o
+                                            | Моят профил
+                                    li
+                                        a(href='#')
+                                            i.fa.fa-heart-o
+                                            | Любими
+                                    li
+                                        a(href='#')
+                                            i.fa.fa-check
+                                            | Поръчка
+                                    li
+                                        a(href='#')
+                                            i.fa.fa-unlock-alt
+                                            |   Влез
+                                    li
+                                        a(href='#')
+                                            i.fa.fa-user-plus
+                                            | Създай
+                            // /Account
+                            // Cart
+                            li.header-cart.dropdown.default-dropdown
+                                a.dropdown-toggle(data-toggle='dropdown', aria-expanded='true')
+                                    .header-btns-icon
+                                        i.fa.fa-shopping-cart
+                                        span.qty 3
+                                    strong.text-uppercase Количка:
+                                    br
+                                    span 35.20$
+                                .custom-menu
+                                    #shopping-cart
+                                        .shopping-cart-list
+                                            .product.product-widget
+                                                .product-thumb
+                                                    img(src='./img/thumb-product01.jpg', alt='')
+                                                .product-body
+                                                    h3.product-price
+                                                        | $32.50
+                                                        span.qty x3
+                                                    h2.product-name
+                                                        a(href='#') Product Name Goes Here
+                                                button.cancel-btn
+                                                    i.fa.fa-trash
+                                            .product.product-widget
+                                                .product-thumb
+                                                    img(src='./img/thumb-product01.jpg', alt='')
+                                                .product-body
+                                                    h3.product-price
+                                                        | $32.50
+                                                        span.qty x3
+                                                    h2.product-name
+                                                        a(href='#') Product Name Goes Here
+                                                button.cancel-btn
+                                                    i.fa.fa-trash
+                                        .shopping-cart-btns
+                                            button.main-btn View Cart
+                                            button.primary-btn
+                                                | Checkout
+                                                i.fa.fa-arrow-circle-right
+                            // /Cart
+                            // Mobile nav toggle
+                            li.nav-toggle
+                                button.nav-toggle-btn.main-btn.icon-btn
+                                    i.fa.fa-bars
+                            // / Mobile nav toggle
+                // header
+            // container
+        // /HEADER
+        // NAVIGATION
+        #navigation
+            // container
+            .container
+                #responsive-nav
+                    // category nav
+                    .category-nav
+                        span.category-header
+                            | Категории
+                            i.fa.fa-list
+                        ul.category-list
+                            li.dropdown.side-dropdown
+                                a.dropdown-toggle(data-toggle='dropdown', aria-expanded='true')
+                                    | Добавки
+                                    i.fa.fa-angle-right
+                                .custom-menu
+                                    .row
+                                        .col-md-4
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                            hr.hidden-md.hidden-lg
+                                        .col-md-4
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                            hr.hidden-md.hidden-lg
+                                        .col-md-4
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                            li
+                                a(href='#') Суперхрани
+                            li.dropdown.side-dropdown
+                                a.dropdown-toggle(data-toggle='dropdown', aria-expanded='true')
+                                    | Напитки
+                                    i.fa.fa-angle-right
+                                .custom-menu
+                                    .row
+                                        .col-md-4
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                            hr
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                            hr.hidden-md.hidden-lg
+                                        .col-md-4
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                            hr
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                        .col-md-4.hidden-sm.hidden-xs
+                                            a.banner.banner-2(href='#')
+                                                img(src='./img/banner04.jpg', alt='')
+                                                .banner-caption
+                                                    h3.white-color
+                                                        | NEW
+                                                        br
+                                                        | COLLECTION
+                            li
+                                a(href='#') Безглутенови
+                            li
+                                a(href='#') Козметика
+                            li.dropdown.side-dropdown
+                                a.dropdown-toggle(data-toggle='dropdown', aria-expanded='true')
+                                    | Подправки
+                                    i.fa.fa-angle-right
+                                .custom-menu
+                                    .row
+                                        .col-md-4
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                            hr
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                            hr.hidden-md.hidden-lg
+                                        .col-md-4
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                            hr
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                            hr.hidden-md.hidden-lg
+                                        .col-md-4
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                            hr
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                            li
+                                a(href='#') Зърнени
+                            li
+                                a(href='#') Билки
+                            li
+                                a(href='#') Всички
+                    // /category nav
+                    // menu nav
+                    .menu-nav
+                        span.menu-header
+                            | Menu
+                            i.fa.fa-bars
+                        ul.menu-list
+                            li
+                                a(href='#') Начало
+                            li
+                                a(href='#') Пазарувай
+                            li.dropdown.mega-dropdown
+                                a.dropdown-toggle(data-toggle='dropdown', aria-expanded='true')
+                                    | Нови
+                                    i.fa.fa-caret-down
+                                .custom-menu
+                                    .row
+                                        .col-md-4
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                            hr.hidden-md.hidden-lg
+                                        .col-md-4
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                            hr.hidden-md.hidden-lg
+                                        .col-md-4
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                    .row.hidden-sm.hidden-xs
+                                        .col-md-12
+                                            hr
+                                            a.banner.banner-1(href='#')
+                                                img(src='./img/banner05.jpg', alt='')
+                                                .banner-caption.text-center
+                                                    h2.white-color NEW COLLECTION
+                                                    h3.white-color.font-weak HOT DEAL
+                            li.dropdown.mega-dropdown.full-width
+                                a.dropdown-toggle(data-toggle='dropdown', aria-expanded='true')
+                                    | Промоции
+                                    i.fa.fa-caret-down
+                                .custom-menu
+                                    .row
+                                        .col-md-3
+                                            .hidden-sm.hidden-xs
+                                                a.banner.banner-1(href='#')
+                                                    img(src='./img/banner06.jpg', alt='')
+                                                    .banner-caption.text-center
+                                                        h3.white-color.text-uppercase Women’s
+                                                hr
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                        .col-md-3
+                                            .hidden-sm.hidden-xs
+                                                a.banner.banner-1(href='#')
+                                                    img(src='./img/banner07.jpg', alt='')
+                                                    .banner-caption.text-center
+                                                        h3.white-color.text-uppercase Men’s
+                                            hr
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                        .col-md-3
+                                            .hidden-sm.hidden-xs
+                                                a.banner.banner-1(href='#')
+                                                    img(src='./img/banner08.jpg', alt='')
+                                                    .banner-caption.text-center
+                                                        h3.white-color.text-uppercase Accessories
+                                            hr
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                                        .col-md-3
+                                            .hidden-sm.hidden-xs
+                                                a.banner.banner-1(href='#')
+                                                    img(src='./img/banner09.jpg', alt='')
+                                                    .banner-caption.text-center
+                                                        h3.white-color.text-uppercase Bags
+                                            hr
+                                            ul.list-links
+                                                li
+                                                    h3.list-links-title Categories
+                                                li
+                                                    a(href='#') Women’s Clothing
+                                                li
+                                                    a(href='#') Men’s Clothing
+                                                li
+                                                    a(href='#') Phones & Accessories
+                                                li
+                                                    a(href='#') Jewelry & Watches
+                                                li
+                                                    a(href='#') Bags & Shoes
+                            li
+                                a(href='#') Статии
+                            li.dropdown.default-dropdown
+                                a.dropdown-toggle(data-toggle='dropdown', aria-expanded='true')
+                                    | Рецепти
+                                    i.fa.fa-caret-down
+                                ul.custom-menu
+                                    li
+                                        a(href='index.html') Home
+                                    li
+                                        a(href='products.html') Products
+                                    li
+                                        a(href='product-page.html') Product Details
+                                    li
+                                        a(href='checkout.html') Checkout
+                    // menu nav
+            // /container
+        // /NAVIGATION
+        // HOME
+        #home
+            // container
+            .container
+                // home wrap
+                .home-wrap
+                    // home slick
+                    #home-slick
+                        // banner
+                        .banner.banner-1
+                            img(src='./img/banner01.jpg', alt='')
+                            .banner-caption.text-center
+                                h1 Bags sale
+                                h3.white-color.font-weak Up to 50% Discount
+                                button.primary-btn Shop Now
+                        // /banner
+                        // banner
+                        .banner.banner-1
+                            img(src='./img/banner02.jpg', alt='')
+                            .banner-caption
+                                h1.primary-color
+                                    | HOT DEAL
+                                    br
+                                    span.white-color.font-weak Up to 50% OFF
+                                button.primary-btn Shop Now
+                        // /banner
+                        // banner
+                        .banner.banner-1
+                            img(src='./img/banner03.jpg', alt='')
+                            .banner-caption
+                                h1.white-color
+                                    | New Product
+                                    span Collection
+                                button.primary-btn Shop Now
+                        // /banner
+                    // /home slick
+                // /home wrap
+            // /container
+        // /HOME
+        // section
+        .section
+            // container
+            .container
+                // row
+                .row
+                    // banner
+                    .col-md-4.col-sm-6
+                        a.banner.banner-1(href='#')
+                            img(src='./img/banner10.jpg', alt='')
+                            .banner-caption.text-center
+                                h2.white-color NEW COLLECTION
+                    // /banner
+                    // banner
+                    .col-md-4.col-sm-6
+                        a.banner.banner-1(href='#')
+                            img(src='./img/banner11.jpg', alt='')
+                            .banner-caption.text-center
+                                h2.white-color NEW COLLECTION
+                    // /banner
+                    // banner
+                    .col-md-4.col-md-offset-0.col-sm-6.col-sm-offset-3
+                        a.banner.banner-1(href='#')
+                            img(src='./img/banner12.jpg', alt='')
+                            .banner-caption.text-center
+                                h2.white-color NEW COLLECTION
+                    // /banner
+                // /row
+            // /container
+        // /section
+        // section
+        .section
+            // container
+            .container
+                // row
+                .row
+                    // section-title
+                    .col-md-12
+                        .section-title
+                            h2.title Deals Of The Day
+                            .pull-right
+                                .product-slick-dots-1.custom-dots
+                    // /section-title
+                    // banner
+                    .col-md-3.col-sm-6.col-xs-6
+                        .banner.banner-2
+                            img(src='./img/banner14.jpg', alt='')
+                            .banner-caption
+                                h2.white-color
+                                    | NEW
+                                    br
+                                    | COLLECTION
+                                button.primary-btn Shop Now
+                    // /banner
+                    // Product Slick
+                    .col-md-9.col-sm-6.col-xs-6
+                        .row
+                            #product-slick-1.product-slick
+                                // Product Single
+                                .product.product-single
+                                    .product-thumb
+                                        .product-label
+                                            span New
+                                            span.sale -20%
+                                        ul.product-countdown
+                                            li
+                                                span 00 H
+                                            li
+                                                span 00 M
+                                            li
+                                                span 00 S
+                                        button.main-btn.quick-view
+                                            i.fa.fa-search-plus
+                                            |  Quick view
+                                        img(src='./img/product01.jpg', alt='')
+                                    .product-body
+                                        h3.product-price
+                                            | $32.50
+                                            del.product-old-price $45.00
+                                        .product-rating
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star-o.empty
+                                        h2.product-name
+                                            a(href='#') Product Name Goes Here
+                                        .product-btns
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-heart
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-exchange
+                                            button.primary-btn.add-to-cart
+                                                i.fa.fa-shopping-cart
+                                                |  Add to Cart
+                                // /Product Single
+                                // Product Single
+                                .product.product-single
+                                    .product-thumb
+                                        .product-label
+                                            span.sale -20%
+                                        ul.product-countdown
+                                            li
+                                                span 00 H
+                                            li
+                                                span 00 M
+                                            li
+                                                span 00 S
+                                        button.main-btn.quick-view
+                                            i.fa.fa-search-plus
+                                            |  Quick view
+                                        img(src='./img/product07.jpg', alt='')
+                                    .product-body
+                                        h3.product-price
+                                            | $32.50
+                                            del.product-old-price $45.00
+                                        .product-rating
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star-o.empty
+                                        h2.product-name
+                                            a(href='#') Product Name Goes Here
+                                        .product-btns
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-heart
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-exchange
+                                            button.primary-btn.add-to-cart
+                                                i.fa.fa-shopping-cart
+                                                |  Add to Cart
+                                // /Product Single
+                                // Product Single
+                                .product.product-single
+                                    .product-thumb
+                                        .product-label
+                                            span New
+                                            span.sale -20%
+                                        ul.product-countdown
+                                            li
+                                                span 00 H
+                                            li
+                                                span 00 M
+                                            li
+                                                span 00 S
+                                        button.main-btn.quick-view
+                                            i.fa.fa-search-plus
+                                            |  Quick view
+                                        img(src='./img/product06.jpg', alt='')
+                                    .product-body
+                                        h3.product-price
+                                            | $32.50
+                                            del.product-old-price $45.00
+                                        .product-rating
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star-o.empty
+                                        h2.product-name
+                                            a(href='#') Product Name Goes Here
+                                        .product-btns
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-heart
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-exchange
+                                            button.primary-btn.add-to-cart
+                                                i.fa.fa-shopping-cart
+                                                |  Add to Cart
+                                // /Product Single
+                                // Product Single
+                                .product.product-single
+                                    .product-thumb
+                                        .product-label
+                                            span New
+                                            span.sale -20%
+                                        ul.product-countdown
+                                            li
+                                                span 00 H
+                                            li
+                                                span 00 M
+                                            li
+                                                span 00 S
+                                        button.main-btn.quick-view
+                                            i.fa.fa-search-plus
+                                            |  Quick view
+                                        img(src='./img/product08.jpg', alt='')
+                                    .product-body
+                                        h3.product-price
+                                            | $32.50
+                                            del.product-old-price $45.00
+                                        .product-rating
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star-o.empty
+                                        h2.product-name
+                                            a(href='#') Product Name Goes Here
+                                        .product-btns
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-heart
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-exchange
+                                            button.primary-btn.add-to-cart
+                                                i.fa.fa-shopping-cart
+                                                |  Add to Cart
+                                // /Product Single
+                    // /Product Slick
+                // /row
+                // row
+                .row
+                    // section title
+                    .col-md-12
+                        .section-title
+                            h2.title Deals Of The Day
+                            .pull-right
+                                .product-slick-dots-2.custom-dots
+                    // section title
+                    // Product Single
+                    .col-md-3.col-sm-6.col-xs-6
+                        .product.product-single.product-hot
+                            .product-thumb
+                                .product-label
+                                    span.sale -20%
+                                ul.product-countdown
+                                    li
+                                        span 00 H
+                                    li
+                                        span 00 M
+                                    li
+                                        span 00 S
+                                button.main-btn.quick-view
+                                    i.fa.fa-search-plus
+                                    |  Quick view
+                                img(src='./img/product01.jpg', alt='')
+                            .product-body
+                                h3.product-price
+                                    | $32.50
+                                    del.product-old-price $45.00
+                                .product-rating
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o.empty
+                                h2.product-name
+                                    a(href='#') Product Name Goes Here
+                                .product-btns
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-heart
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-exchange
+                                    button.primary-btn.add-to-cart
+                                        i.fa.fa-shopping-cart
+                                        |  Add to Cart
+                    // /Product Single
+                    // Product Slick
+                    .col-md-9.col-sm-6.col-xs-6
+                        .row
+                            #product-slick-2.product-slick
+                                // Product Single
+                                .product.product-single
+                                    .product-thumb
+                                        button.main-btn.quick-view
+                                            i.fa.fa-search-plus
+                                            |  Quick view
+                                        img(src='./img/product06.jpg', alt='')
+                                    .product-body
+                                        h3.product-price $32.50
+                                        .product-rating
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star-o.empty
+                                        h2.product-name
+                                            a(href='#') Product Name Goes Here
+                                        .product-btns
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-heart
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-exchange
+                                            button.primary-btn.add-to-cart
+                                                i.fa.fa-shopping-cart
+                                                |  Add to Cart
+                                // /Product Single
+                                // Product Single
+                                .product.product-single
+                                    .product-thumb
+                                        .product-label
+                                            span.sale -20%
+                                        button.main-btn.quick-view
+                                            i.fa.fa-search-plus
+                                            |  Quick view
+                                        img(src='./img/product05.jpg', alt='')
+                                    .product-body
+                                        h3.product-price
+                                            | $32.50
+                                            del.product-old-price $45.00
+                                        .product-rating
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star-o.empty
+                                        h2.product-name
+                                            a(href='#') Product Name Goes Here
+                                        .product-btns
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-heart
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-exchange
+                                            button.primary-btn.add-to-cart
+                                                i.fa.fa-shopping-cart
+                                                |  Add to Cart
+                                // /Product Single
+                                // Product Single
+                                .product.product-single
+                                    .product-thumb
+                                        button.main-btn.quick-view
+                                            i.fa.fa-search-plus
+                                            |  Quick view
+                                        img(src='./img/product04.jpg', alt='')
+                                    .product-body
+                                        h3.product-price $32.50
+                                        .product-rating
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star-o.empty
+                                        h2.product-name
+                                            a(href='#') Product Name Goes Here
+                                        .product-btns
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-heart
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-exchange
+                                            button.primary-btn.add-to-cart
+                                                i.fa.fa-shopping-cart
+                                                |  Add to Cart
+                                // /Product Single
+                                // Product Single
+                                .product.product-single
+                                    .product-thumb
+                                        .product-label
+                                            span New
+                                            span.sale -20%
+                                        button.main-btn.quick-view
+                                            i.fa.fa-search-plus
+                                            |  Quick view
+                                        img(src='./img/product03.jpg', alt='')
+                                    .product-body
+                                        h3.product-price
+                                            | $32.50
+                                            del.product-old-price $45.00
+                                        .product-rating
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star
+                                            i.fa.fa-star-o.empty
+                                        h2.product-name
+                                            a(href='#') Product Name Goes Here
+                                        .product-btns
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-heart
+                                            button.main-btn.icon-btn
+                                                i.fa.fa-exchange
+                                            button.primary-btn.add-to-cart
+                                                i.fa.fa-shopping-cart
+                                                |  Add to Cart
+                                // /Product Single
+                    // /Product Slick
+                // /row
+            // /container
+        // /section
+        // section
+        .section.section-grey
+            // container
+            .container
+                // row
+                .row
+                    // banner
+                    .col-md-8
+                        .banner.banner-1
+                            img(src='./img/banner13.jpg', alt='')
+                            .banner-caption.text-center
+                                h1.primary-color
+                                    | HOT DEAL
+                                    br
+                                    span.white-color.font-weak Up to 50% OFF
+                                button.primary-btn Shop Now
+                    // /banner
+                    // banner
+                    .col-md-4.col-sm-6
+                        a.banner.banner-1(href='#')
+                            img(src='./img/banner11.jpg', alt='')
+                            .banner-caption.text-center
+                                h2.white-color NEW COLLECTION
+                    // /banner
+                    // banner
+                    .col-md-4.col-sm-6
+                        a.banner.banner-1(href='#')
+                            img(src='./img/banner12.jpg', alt='')
+                            .banner-caption.text-center
+                                h2.white-color NEW COLLECTION
+                    // /banner
+                // /row
+            // /container
+        // /section
+        // section
+        .section
+            // container
+            .container
+                // row
+                .row
+                    // section title
+                    .col-md-12
+                        .section-title
+                            h2.title Latest Products
+                    // section title
+                    // Product Single
+                    .col-md-3.col-sm-6.col-xs-6
+                        .product.product-single
+                            .product-thumb
+                                button.main-btn.quick-view
+                                    i.fa.fa-search-plus
+                                    |  Quick view
+                                img(src='./img/product01.jpg', alt='')
+                            .product-body
+                                h3.product-price $32.50
+                                .product-rating
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o.empty
+                                h2.product-name
+                                    a(href='#') Product Name Goes Here
+                                .product-btns
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-heart
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-exchange
+                                    button.primary-btn.add-to-cart
+                                        i.fa.fa-shopping-cart
+                                        |  Add to Cart
+                    // /Product Single
+                    // Product Single
+                    .col-md-3.col-sm-6.col-xs-6
+                        .product.product-single
+                            .product-thumb
+                                .product-label
+                                    span New
+                                    span.sale -20%
+                                button.main-btn.quick-view
+                                    i.fa.fa-search-plus
+                                    |  Quick view
+                                img(src='./img/product02.jpg', alt='')
+                            .product-body
+                                h3.product-price
+                                    | $32.50
+                                    del.product-old-price $45.00
+                                .product-rating
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o.empty
+                                h2.product-name
+                                    a(href='#') Product Name Goes Here
+                                .product-btns
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-heart
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-exchange
+                                    button.primary-btn.add-to-cart
+                                        i.fa.fa-shopping-cart
+                                        |  Add to Cart
+                    // /Product Single
+                    // Product Single
+                    .col-md-3.col-sm-6.col-xs-6
+                        .product.product-single
+                            .product-thumb
+                                .product-label
+                                    span New
+                                    span.sale -20%
+                                button.main-btn.quick-view
+                                    i.fa.fa-search-plus
+                                    |  Quick view
+                                img(src='./img/product03.jpg', alt='')
+                            .product-body
+                                h3.product-price
+                                    | $32.50
+                                    del.product-old-price $45.00
+                                .product-rating
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o.empty
+                                h2.product-name
+                                    a(href='#') Product Name Goes Here
+                                .product-btns
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-heart
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-exchange
+                                    button.primary-btn.add-to-cart
+                                        i.fa.fa-shopping-cart
+                                        |  Add to Cart
+                    // /Product Single
+                    // Product Single
+                    .col-md-3.col-sm-6.col-xs-6
+                        .product.product-single
+                            .product-thumb
+                                .product-label
+                                    span New
+                                button.main-btn.quick-view
+                                    i.fa.fa-search-plus
+                                    |  Quick view
+                                img(src='./img/product04.jpg', alt='')
+                            .product-body
+                                h3.product-price $32.50
+                                .product-rating
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o.empty
+                                h2.product-name
+                                    a(href='#') Product Name Goes Here
+                                .product-btns
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-heart
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-exchange
+                                    button.primary-btn.add-to-cart
+                                        i.fa.fa-shopping-cart
+                                        |  Add to Cart
+                    // /Product Single
+                // /row
+                // row
+                .row
+                    // banner
+                    .col-md-3.col-sm-6.col-xs-6
+                        .banner.banner-2
+                            img(src='./img/banner15.jpg', alt='')
+                            .banner-caption
+                                h2.white-color
+                                    | NEW
+                                    br
+                                    | COLLECTION
+                                button.primary-btn Shop Now
+                    // /banner
+                    // Product Single
+                    .col-md-3.col-sm-6.col-xs-6
+                        .product.product-single
+                            .product-thumb
+                                .product-label
+                                    span New
+                                    span.sale -20%
+                                button.main-btn.quick-view
+                                    i.fa.fa-search-plus
+                                    |  Quick view
+                                img(src='./img/product07.jpg', alt='')
+                            .product-body
+                                h3.product-price
+                                    | $32.50
+                                    del.product-old-price $45.00
+                                .product-rating
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o.empty
+                                h2.product-name
+                                    a(href='#') Product Name Goes Here
+                                .product-btns
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-heart
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-exchange
+                                    button.primary-btn.add-to-cart
+                                        i.fa.fa-shopping-cart
+                                        |  Add to Cart
+                    // /Product Single
+                    // Product Single
+                    .col-md-3.col-sm-6.col-xs-6
+                        .product.product-single
+                            .product-thumb
+                                .product-label
+                                    span New
+                                    span.sale -20%
+                                button.main-btn.quick-view
+                                    i.fa.fa-search-plus
+                                    |  Quick view
+                                img(src='./img/product06.jpg', alt='')
+                            .product-body
+                                h3.product-price
+                                    | $32.50
+                                    del.product-old-price $45.00
+                                .product-rating
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o.empty
+                                h2.product-name
+                                    a(href='#') Product Name Goes Here
+                                .product-btns
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-heart
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-exchange
+                                    button.primary-btn.add-to-cart
+                                        i.fa.fa-shopping-cart
+                                        |  Add to Cart
+                    // /Product Single
+                    // Product Single
+                    .col-md-3.col-sm-6.col-xs-6
+                        .product.product-single
+                            .product-thumb
+                                .product-label
+                                    span New
+                                    span.sale -20%
+                                button.main-btn.quick-view
+                                    i.fa.fa-search-plus
+                                    |  Quick view
+                                img(src='./img/product05.jpg', alt='')
+                            .product-body
+                                h3.product-price
+                                    | $32.50
+                                    del.product-old-price $45.00
+                                .product-rating
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o.empty
+                                h2.product-name
+                                    a(href='#') Product Name Goes Here
+                                .product-btns
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-heart
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-exchange
+                                    button.primary-btn.add-to-cart
+                                        i.fa.fa-shopping-cart
+                                        |  Add to Cart
+                    // /Product Single
+                // /row
+                // row
+                .row
+                    // section title
+                    .col-md-12
+                        .section-title
+                            h2.title Picked For You
+                    // section title
+                    // Product Single
+                    .col-md-3.col-sm-6.col-xs-6
+                        .product.product-single
+                            .product-thumb
+                                button.main-btn.quick-view
+                                    i.fa.fa-search-plus
+                                    |  Quick view
+                                img(src='./img/product04.jpg', alt='')
+                            .product-body
+                                h3.product-price $32.50
+                                .product-rating
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o.empty
+                                h2.product-name
+                                    a(href='#') Product Name Goes Here
+                                .product-btns
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-heart
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-exchange
+                                    button.primary-btn.add-to-cart
+                                        i.fa.fa-shopping-cart
+                                        |  Add to Cart
+                    // /Product Single
+                    // Product Single
+                    .col-md-3.col-sm-6.col-xs-6
+                        .product.product-single
+                            .product-thumb
+                                .product-label
+                                    span New
+                                button.main-btn.quick-view
+                                    i.fa.fa-search-plus
+                                    |  Quick view
+                                img(src='./img/product03.jpg', alt='')
+                            .product-body
+                                h3.product-price $32.50
+                                .product-rating
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o.empty
+                                h2.product-name
+                                    a(href='#') Product Name Goes Here
+                                .product-btns
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-heart
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-exchange
+                                    button.primary-btn.add-to-cart
+                                        i.fa.fa-shopping-cart
+                                        |  Add to Cart
+                    // /Product Single
+                    // Product Single
+                    .col-md-3.col-sm-6.col-xs-6
+                        .product.product-single
+                            .product-thumb
+                                .product-label
+                                    span.sale -20%
+                                button.main-btn.quick-view
+                                    i.fa.fa-search-plus
+                                    |  Quick view
+                                img(src='./img/product02.jpg', alt='')
+                            .product-body
+                                h3.product-price
+                                    | $32.50
+                                    del.product-old-price $45.00
+                                .product-rating
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o.empty
+                                h2.product-name
+                                    a(href='#') Product Name Goes Here
+                                .product-btns
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-heart
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-exchange
+                                    button.primary-btn.add-to-cart
+                                        i.fa.fa-shopping-cart
+                                        |  Add to Cart
+                    // /Product Single
+                    // Product Single
+                    .col-md-3.col-sm-6.col-xs-6
+                        .product.product-single
+                            .product-thumb
+                                .product-label
+                                    span New
+                                    span.sale -20%
+                                button.main-btn.quick-view
+                                    i.fa.fa-search-plus
+                                    |  Quick view
+                                img(src='./img/product01.jpg', alt='')
+                            .product-body
+                                h3.product-price
+                                    | $32.50
+                                    del.product-old-price $45.00
+                                .product-rating
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                    i.fa.fa-star-o.empty
+                                h2.product-name
+                                    a(href='#') Product Name Goes Here
+                                .product-btns
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-heart
+                                    button.main-btn.icon-btn
+                                        i.fa.fa-exchange
+                                    button.primary-btn.add-to-cart
+                                        i.fa.fa-shopping-cart
+                                        |  Add to Cart
+                    // /Product Single
+                // /row
+            // /container
+        // /section
+        // FOOTER
+        footer#footer.section.section-grey
+            // container
+            .container
+                // row
+                .row
+                    // footer widget
+                    .col-md-3.col-sm-6.col-xs-6
+                        .footer
+                            // footer logo
+                            .footer-logo
+                                a.logo(href='#')
+                                    img(src='./img/logo.png', alt='')
+                            // /footer logo
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            // footer social
+                            ul.footer-social
+                                li
+                                    a(href='#')
+                                        i.fa.fa-facebook
+                                li
+                                    a(href='#')
+                                        i.fa.fa-twitter
+                                li
+                                    a(href='#')
+                                        i.fa.fa-instagram
+                                li
+                                    a(href='#')
+                                        i.fa.fa-google-plus
+                                li
+                                    a(href='#')
+                                        i.fa.fa-pinterest
+                            // /footer social
+                    // /footer widget
+                    // footer widget
+                    .col-md-3.col-sm-6.col-xs-6
+                        .footer
+                            h3.footer-header Моят профил
+                            ul.list-links
+                                li
+                                    a(href='#') Моят профил
+                                li
+                                    a(href='#') Любими
+                                li
+                                    a(href='#') Сравни
+                                li
+                                    a(href='#') Поръчка
+                                li
+                                    a(href='#') Влез
+                    // /footer widget
+                    .clearfix.visible-sm.visible-xs
+                    // footer widget
+                    .col-md-3.col-sm-6.col-xs-6
+                        .footer
+                            h3.footer-header Клиенти
+                            ul.list-links
+                                li
+                                    a(href='#') За нас
+                                li
+                                    a(href='#') Доставка и връщане
+                                li
+                                    a(href='#') Контакти
+                                li
+                                    a(href='#') Въпроси
+                    // /footer widget
+                    // footer subscribe
+                    .col-md-3.col-sm-6.col-xs-6
+                        .footer
+                            h3.footer-header Бъди информиран
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                            form
+                                .form-group
+                                    input.input(placeholder='Enter Email Address')
+                                button.primary-btn Join Newslatter
+                    // /footer subscribe
+                // /row
+                hr
+                // row
+                .row
+                    .col-md-8.col-md-offset-2.text-center
+                        // footer copyright
+                        .footer-copyright
+                            // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+                            | Copyright ©
+                            script.
+                                document.write(new Date().getFullYear());
+                            |  All rights reserved | This template is made with
+                            i.fa.fa-heart-o(aria-hidden='true')
+                            |  by
+                            a(href='https://colorlib.com', target='_blank') Colorlib
+                            // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+                        // /footer copyright
+                // /row
+            // /container
+        // /FOOTER
+        // jQuery Plugins
+        script(src='js/jquery.min.js')
+        script(src='js/bootstrap.min.js')
+        script(src='js/slick.min.js')
+        script(src='js/nouislider.min.js')
+        script(src='js/jquery.zoom.min.js')
+        script(src='js/main.js')

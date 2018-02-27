@@ -1,0 +1,22 @@
+{
+  "name": "bioshop",
+  "version": "1.0.0",
+  "description": "Bioshop project ",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Branko",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "mysql2": "^1.4.2",
+    "node-mysql": "^0.4.2",
+    "pug": "^2.0.0-rc.4",
+    "sequelize": "^4.20.1",
+    "sequelize-cli": "^3.0.0"
+  }
+}
